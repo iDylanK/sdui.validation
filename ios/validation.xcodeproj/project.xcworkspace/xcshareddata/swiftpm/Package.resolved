@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sdui.ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iDylanK/sdui.ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3f86ecbe91fd61c09a31f092cb5e9cb492caff5c"
+      }
+    }
+  ],
+  "version" : 2
+}
