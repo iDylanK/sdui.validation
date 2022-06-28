@@ -11,7 +11,7 @@ import SDUI
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 //        ServerDrivenUI.shared.dataSource = ValidationDataSource()
-//        ServerDrivenUI.shared.componentDelegate =
+//        ServerDrivenUI.shared.componentDelegate = ComponentDelegate()
 //        ServerDrivenUI.shared.headerDelegate =
         return true
     }
