@@ -26,6 +26,10 @@
 		FCFB0307286AF3C400F1B901 /* ValidationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0305286AF3C400F1B901 /* ValidationModels.swift */; };
 		FCFB030A286AF5DD00F1B901 /* ProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */; };
 		FCFB030B286AF5DD00F1B901 /* ProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */; };
+		FCFB030E286AF6CC00F1B901 /* ValidationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB030D286AF6CC00F1B901 /* ValidationDataSource.swift */; };
+		FCFB030F286AF6CC00F1B901 /* ValidationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB030D286AF6CC00F1B901 /* ValidationDataSource.swift */; };
+		FCFB0311286AF6DC00F1B901 /* HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0310286AF6DC00F1B901 /* HeaderDelegate.swift */; };
+		FCFB0312286AF6DC00F1B901 /* HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0310286AF6DC00F1B901 /* HeaderDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,8 @@
 		FC2308B728634CB500186843 /* ProductComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductComponent.swift; sourceTree = "<group>"; };
 		FCFB0305286AF3C400F1B901 /* ValidationModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationModels.swift; sourceTree = "<group>"; };
 		FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeader.swift; sourceTree = "<group>"; };
+		FCFB030D286AF6CC00F1B901 /* ValidationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationDataSource.swift; sourceTree = "<group>"; };
+		FCFB0310286AF6DC00F1B901 /* HeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				FC2308AD286346D800186843 /* AppDelegate.swift */,
 				FC2308B0286347B900186843 /* Api.swift */,
 				FC2308AA2863466600186843 /* SDUIData.swift */,
+				FCFB030C286AF6B400F1B901 /* Datasource */,
 				FCFB0304286AF3C400F1B901 /* Domain */,
 				FC2308B328634A7600186843 /* Delegate */,
 				FC2308A92863465000186843 /* Components */,
@@ -124,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2308B428634A8B00186843 /* ComponentDelegate.swift */,
+				FCFB0310286AF6DC00F1B901 /* HeaderDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -142,6 +150,14 @@
 				FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		FCFB030C286AF6B400F1B901 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB030D286AF6CC00F1B901 /* ValidationDataSource.swift */,
+			);
+			path = Datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +267,9 @@
 				FCFB030A286AF5DD00F1B901 /* ProductHeader.swift in Sources */,
 				FC2308B528634A8B00186843 /* ComponentDelegate.swift in Sources */,
 				FC2308B828634CB600186843 /* ProductComponent.swift in Sources */,
+				FCFB030E286AF6CC00F1B901 /* ValidationDataSource.swift in Sources */,
 				FC2308AE286346D800186843 /* AppDelegate.swift in Sources */,
+				FCFB0311286AF6DC00F1B901 /* HeaderDelegate.swift in Sources */,
 				FC230896286342B500186843 /* SDUIValidationApp.swift in Sources */,
 				FCFB0306286AF3C400F1B901 /* ValidationModels.swift in Sources */,
 				FC2308B1286347B900186843 /* Api.swift in Sources */,
@@ -266,7 +284,9 @@
 				FCFB030B286AF5DD00F1B901 /* ProductHeader.swift in Sources */,
 				FC2308B628634A8B00186843 /* ComponentDelegate.swift in Sources */,
 				FC2308B928634CB600186843 /* ProductComponent.swift in Sources */,
+				FCFB030F286AF6CC00F1B901 /* ValidationDataSource.swift in Sources */,
 				FC2308AF286346D800186843 /* AppDelegate.swift in Sources */,
+				FCFB0312286AF6DC00F1B901 /* HeaderDelegate.swift in Sources */,
 				FC230897286342B500186843 /* SDUIValidationApp.swift in Sources */,
 				FCFB0307286AF3C400F1B901 /* ValidationModels.swift in Sources */,
 				FC2308B2286347B900186843 /* Api.swift in Sources */,

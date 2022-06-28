@@ -7,6 +7,4 @@
 
 import SDUI
 
-class ComponentDelegate {
-    // ...
-}
+//class ComponentDelegate: SDUIComponentDelegate {}
