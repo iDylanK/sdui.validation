@@ -22,6 +22,10 @@
 		FC2308B828634CB600186843 /* ProductComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2308B728634CB500186843 /* ProductComponent.swift */; };
 		FC2308B928634CB600186843 /* ProductComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2308B728634CB500186843 /* ProductComponent.swift */; };
 		FCFB0302286A0D7600F1B901 /* SDUI in Frameworks */ = {isa = PBXBuildFile; productRef = FCFB0301286A0D7600F1B901 /* SDUI */; };
+		FCFB0306286AF3C400F1B901 /* ValidationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0305286AF3C400F1B901 /* ValidationModels.swift */; };
+		FCFB0307286AF3C400F1B901 /* ValidationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0305286AF3C400F1B901 /* ValidationModels.swift */; };
+		FCFB030A286AF5DD00F1B901 /* ProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */; };
+		FCFB030B286AF5DD00F1B901 /* ProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,8 @@
 		FC2308B0286347B900186843 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		FC2308B428634A8B00186843 /* ComponentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDelegate.swift; sourceTree = "<group>"; };
 		FC2308B728634CB500186843 /* ProductComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductComponent.swift; sourceTree = "<group>"; };
+		FCFB0305286AF3C400F1B901 /* ValidationModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationModels.swift; sourceTree = "<group>"; };
+		FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +79,10 @@
 				FC2308AD286346D800186843 /* AppDelegate.swift */,
 				FC2308B0286347B900186843 /* Api.swift */,
 				FC2308AA2863466600186843 /* SDUIData.swift */,
+				FCFB0304286AF3C400F1B901 /* Domain */,
 				FC2308B328634A7600186843 /* Delegate */,
 				FC2308A92863465000186843 /* Components */,
+				FCFB0308286AF5C200F1B901 /* Headers */,
 				FC230888286342B500186843 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -118,6 +126,22 @@
 				FC2308B428634A8B00186843 /* ComponentDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FCFB0304286AF3C400F1B901 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB0305286AF3C400F1B901 /* ValidationModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FCFB0308286AF5C200F1B901 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB0309286AF5DD00F1B901 /* ProductHeader.swift */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFB030A286AF5DD00F1B901 /* ProductHeader.swift in Sources */,
 				FC2308B528634A8B00186843 /* ComponentDelegate.swift in Sources */,
 				FC2308B828634CB600186843 /* ProductComponent.swift in Sources */,
 				FC2308AE286346D800186843 /* AppDelegate.swift in Sources */,
 				FC230896286342B500186843 /* SDUIValidationApp.swift in Sources */,
+				FCFB0306286AF3C400F1B901 /* ValidationModels.swift in Sources */,
 				FC2308B1286347B900186843 /* Api.swift in Sources */,
 				FC2308AB2863466600186843 /* SDUIData.swift in Sources */,
 			);
@@ -237,10 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFB030B286AF5DD00F1B901 /* ProductHeader.swift in Sources */,
 				FC2308B628634A8B00186843 /* ComponentDelegate.swift in Sources */,
 				FC2308B928634CB600186843 /* ProductComponent.swift in Sources */,
 				FC2308AF286346D800186843 /* AppDelegate.swift in Sources */,
 				FC230897286342B500186843 /* SDUIValidationApp.swift in Sources */,
+				FCFB0307286AF3C400F1B901 /* ValidationModels.swift in Sources */,
 				FC2308B2286347B900186843 /* Api.swift in Sources */,
 				FC2308AC2863466600186843 /* SDUIData.swift in Sources */,
 			);
@@ -373,7 +401,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

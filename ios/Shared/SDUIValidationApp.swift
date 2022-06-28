@@ -17,8 +17,7 @@ struct SDUIValidationApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-//                Text("Implement...")
-                SDUIRootView()
+               Text("Implement...")
             }
             .environmentObject(sduiData)
         }

@@ -15,7 +15,7 @@ final class Api {
     private let baseUrl = "http://localhost:6060"
 
     public func getView(with url: String?, completion: @escaping ((SDUIScreen) -> Void)) {
-        guard let url = URL(string: "\(baseUrl)/\(url ?? "")") else { return }
+        guard let url = URL(string: "\(baseUrl)/\(url ?? "products")") else { return }
 
         get(url: url, type: SDUIScreen.self) { result in
             switch result {
