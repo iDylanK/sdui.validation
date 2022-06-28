@@ -10,6 +10,7 @@ const getProductsScreen = (req: Request, res: Response, next: NextFunction) => r
         id: 'screen-products',
         type: 'LIST',
         content: {
+            refreshable: true,
             sections: [
                 {
                     components: [
