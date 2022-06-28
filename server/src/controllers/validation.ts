@@ -29,7 +29,21 @@ const getProductsScreen = (req: Request, res: Response, next: NextFunction) => r
 const getProductScreen = (req: Request, res: Response, next: NextFunction) => res.status(200).json(
     screen({
         id: 'screen-product',
-        type: 'CONTENT_VIEW',
+        type: 'LIST',
+        content: {
+            refreshable: true,
+            sections: [
+                {
+                    components: [
+                        {
+                            id: 'component-1',
+                            type: 'BASIC',
+                            content: 'Hello world',
+                        },
+                    ],
+                },
+            ],
+        },
     }),
 );
 
