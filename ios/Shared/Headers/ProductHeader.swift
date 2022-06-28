@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct ProductHeader: View {
+    var header: SDUIProductHeader
+
     var body: some View {
         Text("Product Header")
     }
 }
 
-struct ProductHeader_Previews: PreviewProvider {
-    static var previews: some View {
-        ProductHeader()
-    }
-}
