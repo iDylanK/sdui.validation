@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductComponent: View {
-    var component: SDUIProductComponent
+    // var component: SDUIProductComponent
 
     var body: some View {
         Text("Product Component...")
