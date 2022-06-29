@@ -5,7 +5,9 @@ import {
     screen,
 } from '../../api';
 
-const getProductsScreen = (req: Request, res: Response, next: NextFunction) => res.status(200).json(
+import { Screen } from '../../generated/models';
+
+const getProductsScreen = (req: Request, res: Response<Screen>, next: NextFunction) => res.status(200).json(
     screen({
         id: 'screen-products',
         type: 'LIST',
@@ -26,7 +28,7 @@ const getProductsScreen = (req: Request, res: Response, next: NextFunction) => r
     }),
 );
 
-const getProductScreen = (req: Request, res: Response, next: NextFunction) => res.status(200).json(
+const getProductScreen = (req: Request, res: Response<Screen>, next: NextFunction) => res.status(200).json(
     screen({
         id: 'screen-product',
         type: 'LIST',
